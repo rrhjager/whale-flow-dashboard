@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Whale Tracker — Top 25 Coins</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+  <header class="p-4 bg-gray-800 shadow">
+    <h1 class="text-xl font-bold">Whale Tracker — Top 25 Coins</h1>
+    <p class="text-sm text-gray-400">Zie of whales kopen of verkopen bij de grootste 25 coins.</p>
+  </header>
+  <main class="p-4">
+    <section>
+      <label for="minUsd">Min. transactie (USD): </label>
+      <input id="minUsd" type="range" min="200000" max="20000000" step="50000" value="500000"/>
+      <span id="minUsdLabel">$500,000</span>
+    </section>
+    <section id="coinsGrid" class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 mt-6"></section>
+  </main>
+  <script src="./assets/config.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
